@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo_froy.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Froy</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">ABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+               
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a href="../trabajo de portafolio/portfolio-nick-main/index.html" class="cambiar-perfil">Hans</a>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perrito_salchicha.webp" alt="">
+            </div>
+            <h1>FROY DOMINGUEZ</h1>
+            <h2>Desarrollador de Sistemas de Información - Mecanico</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/share/1Fq2VLS4XF/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="atajos" class="atajos">
+        <div class="contenido-seccion">
+            <h2>Atajos</h2>
+            <div class="grid-atajos">
+                <a href="#inicio" class="atajo-card">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Inicio</span>
+                </a>
+                <a href="#sobremi" class="atajo-card">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Sobre mí</span>
+                </a>
+                <a href="#skills" class="atajo-card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>Habilidades</span>
+                </a>
+                <a href="#curriculum" class="atajo-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Curriculum</span>
+                </a>
+                <a href="#contacto" class="atajo-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contacto</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Froy Dominguez Presentacion.</span> Tengo 17 años y soy estudiante de Desarrollo 
+                de Sistemas de Información; Estudio en el Instituto superior Isabel la Catolica, llevo cursando el 1er 
+                año. Soy una persona muy puntual y responsable.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            20-10-2008
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 929062802
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            dominguezfroyff@gmail.com
+                        </li>
+                      
+                        <li>
+                            <strong>Dirección</strong>
+                            Jr. Los Ciruelos, Huanúco, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-walking"></i>
+                            <span>CAMINAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Abilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Abilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Lenguaje Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lenguaje PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Análisis de Hardware</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creación de Contenido</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Abilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión de Proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de Sistemas de Información</h4>
+                        <span class="casa">I.E.S.T.P. Isabel la Católica</span>
+                        <span class="fecha">2026 - Presente</span>
+                        <p>Formato ténico enfocado en el diseño, desarrollo y gestión de sistemas informáticos. 
+                            Aprendizaje activo en lógica informaticos. Aprendizaje activo en lógica de programación,
+                            estructuras de datos en Java, manipulación de flujos de información y configuración de entronos 
+                            de desarrollo profesionales.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                  
+                  
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador de Software en Formación</h4>
+                        <span class="casa">Instituto Isabel la Católica</span>
+                        <span class="fecha">2026 - Presente</span>
+                        <p>Diseño y construcción de soluciones de software académicas utilizando el lenguaje Java. Aplicación de lógica de programación para la gestión de flujos de datos y manejo de estructuras de información complejas como arreglos y matrices.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Editor Audiovisual & Creador Digital</h4>
+                        <span class="casa">Freelance / Independiente
+                        </span>
+                        <span class="fecha">2024 - Presente</span>
+                        <p>Especialista en postproducción audiovisual y optimización de contenido en alta resolución (4K) para plataformas como TikTok. Dominio avanzado en herramientas como After Effects, Alight Motion y CapCut, aplicando técnicas de corrección de color y diseño visual.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+  
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Dirección: Jr. Los Ciruelos, Huanúco, Perú
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono:  929062802
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: dominguezfroyff@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <div id="selectorPerfiles" class="selector-perfiles">
+        <div class="selector-perfiles__main-card">
+            <img class="selector-perfiles__preview-image" src="img/perrito_salchicha.webp" alt="Vista previa del perfil Froy">
+            <div class="selector-perfiles__preview-caption">
+                <span class="selector-perfiles__preview-name">Froy</span>
+                <span class="selector-perfiles__preview-subtitle">Perfil actual</span>
+            </div>
+        </div>
+        <div class="selector-perfiles__alternatives">
+            <button class="selector-perfiles__mini-card" type="button" data-url="../trabajo de portafolio/portfolio-nick-main/index.html">
+                <img src="../trabajo de portafolio/portfolio-nick-main/img/hero.png" alt="Hans">
+                <span>Hans</span>
+            </button>
+            <button class="selector-perfiles__mini-card" type="button" data-url="../portafolio1 - copia/index.html">
+                <img src="../portafolio1 - copia/img/imagen-anime2121.jpg" alt="Mayuri">
+                <span>Mayuri</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const selector = document.getElementById('selectorPerfiles');
+        if (selector) {
+            const buttons = selector.querySelectorAll('.selector-perfiles__mini-card');
+            buttons.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const url = btn.getAttribute('data-url');
+                    if (url) {
+                        window.setTimeout(() => {
+                            window.location.href = url;
+                        }, 220);
+                    }
+                });
+            });
+
+            const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+            handle.addEventListener('pointerdown', (event) => {
+                dragging = true;
+                selector.classList.add('is-dragging');
+                const rect = selector.getBoundingClientRect();
+                offsetX = event.clientX - rect.left;
+                offsetY = event.clientY - rect.top;
+                handle.setPointerCapture(event.pointerId);
+            });
+
+            handle.addEventListener('pointermove', (event) => {
+                if (!dragging) return;
+                const x = clamp(event.clientX - offsetX, 10, window.innerWidth - selector.offsetWidth - 10);
+                const y = clamp(event.clientY - offsetY, 10, window.innerHeight - selector.offsetHeight - 10);
+                selector.style.left = `${x}px`;
+                selector.style.top = `${y}px`;
+                selector.style.right = 'auto';
+            });
+
+            const stopDragging = () => {
+                dragging = false;
+                selector.classList.remove('is-dragging');
+            };
+
+            handle.addEventListener('pointerup', stopDragging);
+            handle.addEventListener('pointercancel', stopDragging);
+            handle.addEventListener('pointerleave', stopDragging);
+        }
+    </script>
+</body>
+</html>
